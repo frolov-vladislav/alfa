@@ -2,7 +2,7 @@
 ____
 ## :briefcase: Стек технологий
 <p align="center">
-<a href="https://www.java.com/"><img width="6%" title="Java" src="media/logo/Java.svg"/></a>
+<a href="https://www.java.com/"><img width="6%" title="Java" src="(https://upload.wikimedia.org/wikipedia/ru/thumb/3/39/Java_logo.svg/234px-Java_logo.svg.png?20230113103550)"/></a>
 <a href="https://rest-assured.io/"><img width="6%" title="Rest Assured" src="media/logo/RestAssured.svg"/></a>
 <a href="https://selenide.org/"><img width="6%" title="Selenide" src="media/logo/Selenide.svg"/></a>
 <a href="https://aerokube.com/selenoid/"><img width="6%" title="Selenoid" src="media/logo/Selenoid.svg"/></a>
