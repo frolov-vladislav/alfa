@@ -13,6 +13,7 @@ ____
 <a href="https://web.telegram.org/"><img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/768px-Telegram_logo.svg.png"></a>
 </p>
 
+
 ## :rocket: Запуск автотестов
 
 **Команда запуска тестов из терминала**
