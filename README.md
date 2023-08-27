@@ -1,6 +1,6 @@
 # Автотесты для сайта [Alfabank](https://alfabank.ru)
+____
 ## :briefcase: Стек технологий
-
 <p align="center">
 <a href="https://www.java.com/"><img width="6%" title="Java" src="media/logo/Java.svg"/></a>
 <a href="https://rest-assured.io/"><img width="6%" title="Rest Assured" src="media/logo/RestAssured.svg"/></a>
