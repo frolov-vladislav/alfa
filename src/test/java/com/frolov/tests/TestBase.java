@@ -18,16 +18,20 @@ public class TestBase {
     public DesiredCapabilities capabilities = new DesiredCapabilities();
 
     @BeforeEach
-    void beforeEach() {
+    void beforeAll() {
         Configuration.browserSize = System.getProperty("browserSize", "1920x1980");
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("version", "99.0");
         Configuration.pageLoadTimeout = 60000;
-        SelenideLogger.addListener("Allure", new AllureSelenide());
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
         Configuration.remote = format("https://%s:%s@selenoid.autotests.cloud/wd/hub/", credentials.login(), credentials.password());
+    }
+
+    @BeforeEach
+    public void setUp() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
     }
 
     @AfterEach
