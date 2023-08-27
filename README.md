@@ -21,3 +21,8 @@ ____
 gradle clean test -Dbrowser=chrome -Dversion=99.0 -DbrowserSize=1920x1080
 ```
 ---
+**Обязательно для использования Selenoid**
++ Создать в папке <code>src/test/resources/config</code> credentials.properties
++ В credentials.properties указать:
+  + login=логин от Selenoid
+  + password=пароль от Selenoid
