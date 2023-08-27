@@ -2,6 +2,6 @@
 ____
 ## ⚙️: Стек технологий
 <p>
-<a href="https://www.jetbrains.com/idea/"><img height="50" width="6%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"></a>
-<code><img height="50" width="6%" src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg"></code>
+<a href="https://www.java.com/"><img height="50" width="6%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"></a>
+<a href="https://www.jetbrains.com/idea/"><img height="50" width="6%" src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg"></a>
 </p>
