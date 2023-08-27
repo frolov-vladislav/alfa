@@ -15,9 +15,9 @@ ____
 
 ---
 ## :rocket: Запуск автотестов
-____
+---
 **Команда запуска тестов из терминала**
 ```
 gradle clean test -Dbrowser=chrome -Dversion=99.0 -DbrowserSize=1920x1080
 ```
-____
+---
