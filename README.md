@@ -53,9 +53,17 @@ ___
 
 ___
 
-## <img width="4%" style="vertical-align:middle" title="Allure testOps" src="https://qameta.io/assets/testopslogo.svg"> [Пример Allure-отчета](https://jenkins.autotests.cloud/job/08_shizako_13_alfa/17/allure/)
-Проект интегрирован с сисемой Allure testOps
+## <img width="4%" style="vertical-align:middle" title="Allure testOps" src="https://qameta.io/assets/testopslogo.svg"> [Allure testOps](https://allure.autotests.cloud/project/3632/test-cases?treeId=7080)
+Проект интегрирован с сисемой Allure testOps, где так же можно просматривать отчёты, аттачи, интегрировать запуски и задачи с Jira
 
+<p align="center">
+<img title="Allure Overview" src="files/testops.png">
+</p>
+
+___
+
+## <img width="4%" style="vertical-align:middle" title="Allure testOps" src="https://qameta.io/assets/testopslogo.svg"> [Allure testOps](https://allure.autotests.cloud/project/3632/test-cases?treeId=7080)
+Проект интегрирован с сисемой Allure testOps, где так же можно просматривать отчёты, аттачи, интегрировать запуски и задачи с Jira
 
 <p align="center">
 <img title="Allure Overview" src="files/testops.png">
