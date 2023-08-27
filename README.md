@@ -48,7 +48,7 @@ ___
 
 
 <p align="center">
-<img title="Allure Overview" src="files/allurereport.png">
+<img title="Allure Overview" src="files/alurereport.png">
 </p>
 
 ___
