@@ -20,11 +20,11 @@ public class CreditApplicationTests extends TestBase {
         open(mainUrl);
         mainPage.clickOnGetCreditButton();
         creditApplicationPage.progressBarIsVisible();
-        creditApplicationPage.setInput(CreditApplicationInputs.FULL_NAME, "Фамилия", true);
+        creditApplicationPage.setInput(CreditApplicationInputs.FULL_NAME, "Сергеев", true);
         creditApplicationPage.progressBarPercentOfFullingIs("7");
-        creditApplicationPage.setInput(CreditApplicationInputs.FIRST_NAME, "Имя", true);
+        creditApplicationPage.setInput(CreditApplicationInputs.FIRST_NAME, "Сергей", true);
         creditApplicationPage.progressBarPercentOfFullingIs("14");
-        creditApplicationPage.setInput(CreditApplicationInputs.MIDDLE_NAME, "Дмитриевич", true);
+        creditApplicationPage.setInput(CreditApplicationInputs.MIDDLE_NAME, "Сергеевич", true);
         creditApplicationPage.progressBarPercentOfFullingIs("21");
         creditApplicationPage.setInput(CreditApplicationInputs.PHONE, phoneNumber, false);
         creditApplicationPage.progressBarPercentOfFullingIs("32");
