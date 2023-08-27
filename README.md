@@ -58,5 +58,5 @@ ___
 После завершения сборки бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
 
 <p align="center">
-<img width="70%" title="Telegram Notifications" src="files/bot.png">
+<img width="70%" title="Telegram Notifications" src="files/.png">
 </p>
