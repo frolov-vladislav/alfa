@@ -53,6 +53,16 @@ ___
 
 ___
 
+## <img width="4%" style="vertical-align:middle" title="Allure testOps" src="https://qameta.io/assets/testopslogo.svg"> [Пример Allure-отчета](https://jenkins.autotests.cloud/job/08_shizako_13_alfa/17/allure/)
+Проект интегрирован с сисемой Allure testOps
+
+
+<p align="center">
+<img title="Allure Overview" src="files/testops.png">
+</p>
+
+___
+
 ### <img width="4%" style="vertical-align:middle" title="Telegram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/768px-Telegram_logo.svg.png"> Уведомления в Telegram с использованием бота
 
 После завершения сборки бот, созданный в <code>Telegram</code>, отправляет сообщение с отчетом о прогоне тестов.
