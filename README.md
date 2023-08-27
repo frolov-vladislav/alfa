@@ -65,5 +65,5 @@ ___
 
 Видео из Allure report
 <p align="center">
-  <img title="Selenoid Video" src=files/video.gif">
+  <img title="Selenoid Video" src="files/video.gif">
 </p>
