@@ -7,4 +7,5 @@ ____
 <a href="https://gradle.org/"><img height="50" width="10%" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Gradle_logo.png"></a>
 <a href="https://selenide.org/"><img height="50" width="10%" src="https://selenide.org/images/selenide-logo-big.png"></a>
 <a href="https://www.jenkins.io/"><img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/226px-Jenkins_logo.svg.png?20120629215426"></a>
+<a href="https://junit.org/junit5/"><img height="50" src="https://junit.org/junit5/assets/img/junit5-logo.png"></a>
 </p>
