@@ -61,11 +61,9 @@ ___
 <img width="70%" title="Telegram Notifications" src="files/bot.png">
 </p>
 
-___
-
 ### <img width="4%" style="vertical-align:middle" title="Selenoid" src="https://aerokube.com/selenoid/images/aerokube_logo.svg"> Видео примера запуска тестов в Selenoid
 
-Видео из Allure reporte
+Видео из Allure report
 <p align="center">
   <img title="Selenoid Video" src=files/video.gif">
 </p>
