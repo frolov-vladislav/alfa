@@ -9,4 +9,5 @@ ____
 <a href="https://www.jenkins.io/"><img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/226px-Jenkins_logo.svg.png?20120629215426"></a>
 <a href="https://junit.org/junit5/"><img height="50" src="https://junit.org/junit5/assets/img/junit5-logo.png"></a>
 <a href="https://github.com/"><img height="50" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></a>
+<a href="https://web.telegram.org/"><img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/768px-Telegram_logo.svg.png"></a>
 </p>
