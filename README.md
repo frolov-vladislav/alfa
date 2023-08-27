@@ -44,3 +44,11 @@ gradle clean test -Dbrowser=chrome -Dversion=99.0 -DbrowserSize=1920x1080
 
 ___
 
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4"> [Пример Allure-отчета](https://jenkins.autotests.cloud/job/08_shizako_13_alfa/17/allure/)
+
+
+<p align="center">
+<img title="Allure Overview" src="files/alurereport.png">
+</p>
+
+___
