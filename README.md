@@ -26,3 +26,17 @@ gradle clean test -Dbrowser=chrome -Dversion=99.0 -DbrowserSize=1920x1080
 + В credentials.properties указать:
   + login=логин от Selenoid
   + password=пароль от Selenoid
+
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="[media/logo/Jenkins.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/226px-Jenkins_logo.svg.png?20120629215426)"> [Сборка](https://jenkins.autotests.cloud/job/08_shizako_13_alfa/)
+**Шаги для запуска тестов:**
+1. Зайти в сборку
+2. Перейти в раздел <code>Собрать с параметрами</code>
+3. Выбрать необходимые параметры
+4. Нажать кнопку <code>Собрать</code>
+
+<p align="center">
+<img title="Jenkins Build" src="files/jenkins.png">
+</p>
+
+___
+
