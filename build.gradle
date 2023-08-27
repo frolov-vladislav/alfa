@@ -50,3 +50,37 @@ tasks.withType(Test) {
         }
     }
 }
+
+task validateLowCreditAmount(type: Test) {
+    useJUnitPlatform{
+        includeTags("validating_low_amount")
+    }
+}
+
+task validateHighCreditAmount(type: Test) {
+    useJUnitPlatform{
+        includeTags("validating_high_amount")
+    }
+}
+
+task fillCreditCalculator(type: Test) {
+    useJUnitPlatform{
+        includeTags("calculator_fill")
+    }
+}
+
+task login(type: Test) {
+    useJUnitPlatform{
+        includeTags("login_opened")
+    }
+}
+
+task search(type: Test) {
+    useJUnitPlatform{
+        includeTags("search")
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
