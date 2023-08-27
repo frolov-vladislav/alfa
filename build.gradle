@@ -44,7 +44,7 @@ tasks.withType(Test) {
 
     testLogging {
         lifecycle {
-//            events "started", "failed"
+            events "started", "failed"
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }
@@ -52,31 +52,31 @@ tasks.withType(Test) {
 }
 
 task validateLowCreditAmount(type: Test) {
-    useJUnitPlatform{
+    useJUnitPlatform {
         includeTags("validating_low_amount")
     }
 }
 
 task validateHighCreditAmount(type: Test) {
-    useJUnitPlatform{
+    useJUnitPlatform {
         includeTags("validating_high_amount")
     }
 }
 
 task fillCreditCalculator(type: Test) {
-    useJUnitPlatform{
+    useJUnitPlatform {
         includeTags("calculator_fill")
     }
 }
 
 task login(type: Test) {
-    useJUnitPlatform{
+    useJUnitPlatform {
         includeTags("login_opened")
     }
 }
 
 task search(type: Test) {
-    useJUnitPlatform{
+    useJUnitPlatform {
         includeTags("search")
     }
 }
