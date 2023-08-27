@@ -14,8 +14,9 @@ ____
 <a href="https://github.com/"><img height="50" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></a>  
 <a href="https://qameta.io/"><img height="50" src="https://qameta.io/assets/testopslogo.svg"></a>
 <a href="https://www.atlassian.com/"><img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Jira_%28Software%29_logo.svg/798px-Jira_%28Software%29_logo.svg.png?20191008180352"></a>  
-
 </p>
+
+
 ---
 ## :rocket: Запуск автотестов
 ---
