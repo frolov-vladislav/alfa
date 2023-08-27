@@ -81,6 +81,12 @@ task search(type: Test) {
     }
 }
 
+task fieldsValidate(type: Test) {
+    useJUnitPlatform {
+        includeTags("fields_validate")
+    }
+}
+
 test {
     useJUnitPlatform()
 }

@@ -2,7 +2,7 @@ package com.frolov.tests.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import com.frolov.tests.pages.components.CreditApplicationInputs;
-import com.frolov.tests.pages.components.CreditApplicationsButtons;
+import com.frolov.tests.pages.components.CreditApplicationValidatesMessages;
 import org.junit.jupiter.api.Assertions;
 
 import static com.codeborne.selenide.Condition.text;
@@ -17,7 +17,7 @@ public class CreditApplicationPage {
             securityWarrantyText = element("[data-test-id='PilSecurityWarrantyBlock'] [data-test-id='text']"),
             progressBar = element("[data-test-id='progress-bar']"),
             progressBarFilledLine = element("[data-test-id='progress-bar-filled-line']"),
-            hasNotMiddleNameCheckbox = element("[type='checkbox'][name='hasMiddleName']");
+            submitButton = element("[data-test-id='submit-button']");
 
 
     public void setInput(CreditApplicationInputs creditApplicationInputs, String value, boolean hasSuggest) {
@@ -31,10 +31,8 @@ public class CreditApplicationPage {
         });
     }
 
-    public void clickOnButton(CreditApplicationsButtons creditApplicationsButtons) {
-        step(String.format("Click on %s button", creditApplicationsButtons), () -> {
-            element(creditApplicationsButtons.getSelector()).click();
-        });
+    public void validateMessageIsVisible(CreditApplicationValidatesMessages messages) {
+        messages.getElement(messages).shouldBe(visible);
     }
 
     public void securityWarrantyBlockIsVisible() {
@@ -61,6 +59,12 @@ public class CreditApplicationPage {
             sleep(1000);
             String stile = progressBarFilledLine.getAttribute("style");
             Assertions.assertEquals(stile, String.format("width: %s", percent) + "%;");
+        });
+    }
+
+    public void clickOnSubmitButton() {
+        step("Click on submit button", () -> {
+            submitButton.click();
         });
     }
 }
