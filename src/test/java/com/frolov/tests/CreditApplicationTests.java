@@ -22,7 +22,7 @@ public class CreditApplicationTests extends TestData {
         creditApplicationPage.progressBarPercentOfFullingIs("7");
         creditApplicationPage.setInput(CreditApplicationInputs.FIRST_NAME, "Имя", true);
         creditApplicationPage.progressBarPercentOfFullingIs("14");
-        creditApplicationPage.setInput(CreditApplicationInputs.MIDDLE_NAME, "Отчество", true);
+        creditApplicationPage.setInput(CreditApplicationInputs.MIDDLE_NAME, "Дмитриевич", true);
         creditApplicationPage.progressBarPercentOfFullingIs("21");
         creditApplicationPage.setInput(CreditApplicationInputs.PHONE, phoneNumber, false);
         creditApplicationPage.progressBarPercentOfFullingIs("32");
