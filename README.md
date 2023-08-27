@@ -13,13 +13,11 @@ ____
 <a href="https://web.telegram.org/"><img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/768px-Telegram_logo.svg.png"></a>
 </p>
 
-<p>
   
----
 ## :rocket: Запуск автотестов
 ___
 **Команда запуска тестов из терминала**
 ```
 gradle clean test -Dbrowser=chrome -Dversion=99.0 -DbrowserSize=1920x1080
 ```
-</p>
+
