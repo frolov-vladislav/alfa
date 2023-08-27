@@ -13,7 +13,7 @@ public class CalculatorTests extends TestBase {
 
     MainPage mainPage = new MainPage();
 
-    @ParameterizedTest
+    @ParameterizedTest(name = "{index} - Validate min amount with {0} term")
     @Tag("validating_low_amount")
     @EnumSource(value = YearsSelectors.class, mode = EnumSource.Mode.EXCLUDE)
     void creditMinAmountValidateTest(YearsSelectors yearsSelectors) {
@@ -22,7 +22,7 @@ public class CalculatorTests extends TestBase {
         mainPage.creditCalculator.creditMinValidateMessageIsVisible();
     }
 
-    @ParameterizedTest
+    @ParameterizedTest(name = "{index} - Fill with {0} term")
     @Tag("calculator_fill")
     @EnumSource(value = YearsSelectors.class, mode = EnumSource.Mode.EXCLUDE)
     void creditTest(YearsSelectors yearsSelectors) {
@@ -32,7 +32,7 @@ public class CalculatorTests extends TestBase {
 
     }
 
-    @ParameterizedTest
+    @ParameterizedTest(name = "{index} - Validate max amount with {0} term")
     @Tag("validating_high_amount")
     @EnumSource(value = YearsSelectors.class, mode = EnumSource.Mode.EXCLUDE)
     void creditMaxAmountValidateTest(YearsSelectors yearsSelectors) {
