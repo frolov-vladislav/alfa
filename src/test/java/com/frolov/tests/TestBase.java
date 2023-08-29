@@ -21,12 +21,12 @@ public class TestBase {
     void beforeAll() {
         Configuration.browserSize = System.getProperty("browserSize", "1920x1980");
         Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("version", "99.0");
+        Configuration.browserVersion = System.getProperty("version", "115.0");
         Configuration.pageLoadTimeout = 60000;
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
-        Configuration.remote = format("https://%s:%s@selenoid.autotests.cloud/wd/hub/", credentials.login(), credentials.password());
+        Configuration.remote = "http://localhost:4444/wd/hub";
     }
 
     @BeforeEach
