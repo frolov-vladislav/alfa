@@ -87,6 +87,12 @@ task fieldsValidate(type: Test) {
     }
 }
 
+task progressBar(type: Test) {
+    useJUnitPlatform {
+        includeTags("progress_bar")
+    }
+}
+
 test {
     useJUnitPlatform()
 }
