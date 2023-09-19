@@ -1,7 +1,7 @@
-package com.frolov.tests.pages;
+package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import com.frolov.tests.pages.components.CreditCalculator;
+import pages.components.CreditCalculator;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selectors.byText;

@@ -1,7 +1,7 @@
 package com.frolov.tests;
 
-import com.frolov.tests.pages.MainPage;
-import com.frolov.tests.pages.components.YearsSelectors;
+import pages.MainPage;
+import pages.components.YearsSelectors;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;

@@ -1,8 +1,8 @@
-package com.frolov.tests.pages;
+package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import com.frolov.tests.pages.components.CreditApplicationInputs;
-import com.frolov.tests.pages.components.CreditApplicationValidatesMessages;
+import pages.components.CreditApplicationInputs;
+import pages.components.CreditApplicationValidatesMessages;
 import org.junit.jupiter.api.Assertions;
 
 import static com.codeborne.selenide.Condition.text;

@@ -1,7 +1,7 @@
 package com.frolov.tests;
 
-import com.frolov.tests.pages.LoginPage;
-import com.frolov.tests.pages.MainPage;
+import pages.LoginPage;
+import pages.MainPage;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 

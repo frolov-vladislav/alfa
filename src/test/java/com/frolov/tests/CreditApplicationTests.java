@@ -1,9 +1,9 @@
 package com.frolov.tests;
 
-import com.frolov.tests.pages.CreditApplicationPage;
-import com.frolov.tests.pages.MainPage;
-import com.frolov.tests.pages.components.CreditApplicationInputs;
-import com.frolov.tests.pages.components.CreditApplicationValidatesMessages;
+import pages.CreditApplicationPage;
+import pages.MainPage;
+import pages.components.CreditApplicationInputs;
+import pages.components.CreditApplicationValidatesMessages;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package com.frolov.tests.pages.components;
+package pages.components;
 
 import com.codeborne.selenide.SelenideElement;
 

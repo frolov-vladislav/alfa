@@ -1,4 +1,4 @@
-package com.frolov.tests.pages.components;
+package pages.components;
 
 public enum CreditApplicationInputs {
     FIRST_NAME("input[name='firstName']"),
