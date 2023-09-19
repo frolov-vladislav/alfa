@@ -12,7 +12,7 @@ ____
 <a href="https://github.com/allure-framework/allure2"><img height="50" src="https://avatars.githubusercontent.com/u/5879127?s=200&v=4"></a>
 <a href="https://web.telegram.org/"><img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/768px-Telegram_logo.svg.png"></a>
 <a href="https://github.com/"><img height="50" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></a>  
-<a href="https://qameta.io/"><img height="50" src="files/testopslogo.png"></a>
+<img height="50" src="files/testopslogo.png">
 <a href="https://www.atlassian.com/"><img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Jira_%28Software%29_logo.svg/798px-Jira_%28Software%29_logo.svg.png?20191008180352"></a>  
 </p>
 
