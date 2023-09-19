@@ -53,7 +53,7 @@ ___
 
 ___
 
-## <img width="4%" style="vertical-align:middle" title="Allure testOps" src="https://qameta.io/assets/testopslogo.svg"> [Allure testOps](https://allure.autotests.cloud/project/3632/test-cases?treeId=7080)
+## <img width="4%" style="vertical-align:middle" title="Allure testOps" src="files/testopslogo.png"> [Allure testOps](https://allure.autotests.cloud/project/3632/test-cases?treeId=7080)
 Проект интегрирован с сисемой Allure testOps, где так же можно просматривать отчёты, аттачи, интегрировать запуски и задачи с Jira
 
 <p align="center">
