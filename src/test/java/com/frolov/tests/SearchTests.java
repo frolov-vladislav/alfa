@@ -1,9 +1,9 @@
 package com.frolov.tests;
 
-import pages.MainPage;
-import pages.SearchResultsPage;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import pages.MainPage;
+import pages.SearchResultsPage;
 
 import static com.codeborne.selenide.Selenide.open;
 import static com.frolov.tests.TestData.mainUrl;

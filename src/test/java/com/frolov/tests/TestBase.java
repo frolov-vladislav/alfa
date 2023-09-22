@@ -2,7 +2,8 @@ package com.frolov.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import config.CredentialsConfig;
+import config.DriverConfig;
+import config.RemoteWebDriver;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
@@ -10,23 +11,25 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import static java.lang.String.format;
+import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
 
-    public static CredentialsConfig credentials = ConfigFactory.create(CredentialsConfig.class);
     public DesiredCapabilities capabilities = new DesiredCapabilities();
+    private final DriverConfig config = ConfigFactory.create(DriverConfig.class, System.getProperties());
+    private final RemoteWebDriver remoteWebDriver = ConfigFactory.create(RemoteWebDriver.class, System.getProperties());
 
     @BeforeEach
     void beforeAll() {
-        Configuration.browserSize = System.getProperty("browserSize", "1920x1980");
-        Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("version", "115.0");
-        Configuration.pageLoadTimeout = 60000;
+        Configuration.browser = config.getBrowser();
+        Configuration.browserVersion = config.getVersion();
+        Configuration.remote = config.remote() ? remoteWebDriver.getRemote() : null;
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
-        Configuration.remote = "http://localhost:4444/wd/hub";
+        open(config.getBaseUrl());
+
+
     }
 
     @BeforeEach
