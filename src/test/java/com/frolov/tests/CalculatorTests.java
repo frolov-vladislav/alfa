@@ -1,12 +1,11 @@
 package com.frolov.tests;
 
-import pages.MainPage;
-import pages.components.YearsSelectors;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
+import pages.MainPage;
+import pages.components.YearsSelectors;
 
-import static com.codeborne.selenide.Selenide.open;
 import static com.frolov.tests.TestData.*;
 
 public class CalculatorTests extends TestBase {
@@ -17,7 +16,6 @@ public class CalculatorTests extends TestBase {
     @Tag("validating_low_amount")
     @EnumSource(value = YearsSelectors.class, mode = EnumSource.Mode.EXCLUDE)
     void creditMinAmountValidateTest(YearsSelectors yearsSelectors) {
-        open(mainUrl);
         mainPage.creditCalculator.fillCreditCalculator(lowerEquivalenceAmount.toString(), yearsSelectors);
         mainPage.creditCalculator.creditMinValidateMessageIsVisible();
     }
@@ -26,7 +24,6 @@ public class CalculatorTests extends TestBase {
     @Tag("calculator_fill")
     @EnumSource(value = YearsSelectors.class, mode = EnumSource.Mode.EXCLUDE)
     void creditTest(YearsSelectors yearsSelectors) {
-        open(mainUrl);
         mainPage.creditCalculator.fillCreditCalculator(validEquivalenceAmount.toString(), yearsSelectors);
         mainPage.creditCalculator.monthlyPayIsVisible();
 
@@ -36,7 +33,6 @@ public class CalculatorTests extends TestBase {
     @Tag("validating_high_amount")
     @EnumSource(value = YearsSelectors.class, mode = EnumSource.Mode.EXCLUDE)
     void creditMaxAmountValidateTest(YearsSelectors yearsSelectors) {
-        open(mainUrl);
         mainPage.creditCalculator.fillCreditCalculator(highestEquivalenceAmount.toString(), yearsSelectors);
         mainPage.creditCalculator.creditMaxValidateMessageIsVisible();
 

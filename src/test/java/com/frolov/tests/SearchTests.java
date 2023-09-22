@@ -5,9 +5,6 @@ import org.junit.jupiter.api.Test;
 import pages.MainPage;
 import pages.SearchResultsPage;
 
-import static com.codeborne.selenide.Selenide.open;
-import static com.frolov.tests.TestData.mainUrl;
-
 public class SearchTests extends TestBase {
     MainPage mainPage = new MainPage();
     SearchResultsPage searchResultsPage = new SearchResultsPage();
@@ -15,7 +12,6 @@ public class SearchTests extends TestBase {
     @Test
     @Tag("search")
     public void searchTest() {
-        open(mainUrl);
         mainPage.typeInSearchString("Ипотека");
         mainPage.clickOnSubmitQueryButton();
         searchResultsPage.firstResultIs("Ипотека");

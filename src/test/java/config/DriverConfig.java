@@ -1,14 +1,13 @@
 package config;
 
 import org.aeonbits.owner.Config;
-
+@Config.Sources({"classpath:config/local.properties"})
 public interface DriverConfig extends Config {
-    @Key("browser")
-    @DefaultValue("chrome")
+
+    @Key("browserName")
     String getBrowser();
 
-    @Key("version")
-    @DefaultValue("116.0")
+    @Key("browserVersion")
     String getVersion();
 
     @Key("baseUrl")
@@ -18,4 +17,7 @@ public interface DriverConfig extends Config {
     @Key("remote")
     @DefaultValue("false")
     Boolean remote();
+
+    @Key("screenSize")
+    String getSize();
 }

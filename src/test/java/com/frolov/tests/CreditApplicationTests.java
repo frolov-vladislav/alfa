@@ -1,14 +1,14 @@
 package com.frolov.tests;
 
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
 import pages.CreditApplicationPage;
 import pages.MainPage;
 import pages.components.CreditApplicationInputs;
 import pages.components.CreditApplicationValidatesMessages;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Selenide.open;
-import static com.frolov.tests.TestData.*;
+import static com.frolov.tests.TestData.email;
+import static com.frolov.tests.TestData.phoneNumber;
 
 public class CreditApplicationTests extends TestBase {
     CreditApplicationPage creditApplicationPage = new CreditApplicationPage();
@@ -17,7 +17,6 @@ public class CreditApplicationTests extends TestBase {
     @Test
     @Tag("progress_bar")
     void progressBarTest() {
-        open(mainUrl);
         mainPage.clickOnGetCreditButton();
         creditApplicationPage.progressBarIsVisible();
         creditApplicationPage.setInput(CreditApplicationInputs.FULL_NAME, "Сергеев", true);
@@ -35,7 +34,6 @@ public class CreditApplicationTests extends TestBase {
     @Test
     @Tag("fields_validate")
     void validateFields() {
-        open(mainUrl);
         mainPage.clickOnGetCreditButton();
         creditApplicationPage.clickOnSubmitButton();
         creditApplicationPage.validateMessageIsVisible(CreditApplicationValidatesMessages.EMAIL);

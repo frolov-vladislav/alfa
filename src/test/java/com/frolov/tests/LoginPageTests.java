@@ -1,12 +1,9 @@
 package com.frolov.tests;
 
-import pages.LoginPage;
-import pages.MainPage;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-
-import static com.codeborne.selenide.Selenide.open;
-import static com.frolov.tests.TestData.mainUrl;
+import pages.LoginPage;
+import pages.MainPage;
 
 public class LoginPageTests extends TestBase {
     LoginPage loginPage = new LoginPage();
@@ -15,7 +12,6 @@ public class LoginPageTests extends TestBase {
     @Test
     @Tag("login_opened")
     public void loginPageOpenedTest() {
-        open(mainUrl);
         mainPage.clickOnBankOnlineButton();
         loginPage.isLoginPage();
 

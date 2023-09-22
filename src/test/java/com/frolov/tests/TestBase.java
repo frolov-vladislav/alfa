@@ -21,15 +21,20 @@ public class TestBase {
 
     @BeforeEach
     void beforeAll() {
-        Configuration.browser = config.getBrowser();
-        Configuration.browserVersion = config.getVersion();
-        Configuration.remote = config.remote() ? remoteWebDriver.getRemote() : null;
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
+        if (config.remote()) {
+            Configuration.remote = remoteWebDriver.getRemote();
+            Configuration.browser = remoteWebDriver.getBrowser();
+            Configuration.browserVersion = remoteWebDriver.getVersion();
+            Configuration.browserSize = remoteWebDriver.getSize();
+        } else {
+            Configuration.browser = config.getBrowser();
+            Configuration.browserVersion = config.getVersion();
+            Configuration.browserSize = config.getSize();
+        }
         open(config.getBaseUrl());
-
-
     }
 
     @BeforeEach

@@ -10,6 +10,5 @@ public class TestData {
             validEquivalenceAmount = faker.number().numberBetween(50000, 7500000);
     public static String phoneNumber = "846" + faker.phoneNumber().subscriberNumber(7),
             email = faker.internet().emailAddress();
-    public static final String mainUrl = "https://www.alfabank.ru";
 }
 
